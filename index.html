@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang= ja>
+    <head>
+        <meta charset="UTF-8">
+        <!--レスポンシブviewport-->
+        <meta name="viewport" content="width=device\width">
+        <title>みやび会</title>
+
+        <!--googlefont-->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap&subset=japanese" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        
+        <!--ファビコン-->
+        <link rel="icon" href="logo_03.png" type="image/png">
+        <link rel="icon" href="logo_03.svg" type="image/svg+xml">
+    </head>
+
+    <!--body------------------------------------------------------------ -->
+    <body onload="onld();">
+
+     <!--ヘッダー-->
+    <header class="header">
+        <div class="container">
+            <div class="site">
+                <img src="img/miyabi_logo.png" alt="">
+                <div>
+                <p class="corp">みやび会</p>
+                <p class="desc">煎茶道小笠原真流</p>
+                </div>
+            </div>
+
+            <!--ヘッダーナビゲーションボタン-->
+            <button type="button" class="nav-button" onclick="navFunc()">
+                <span class="sr-only">MENU</span>
+            </button>
+
+            <!--ヘッダーナビゲーション-->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">みやび会とは</a></li>
+                    <li><a href="#">行事予定</a></li>
+                    <li><a href="#">教室のご案内</a></li>
+                    <li><a href="#">活動記録</a></li>
+                    <li><a href="#">よくあるご質問</a></li>
+                    <li><a href="#" class="btn">お問い合わせ</a></li>
+                </ul>
+            </nav>
+
+            
+        </div>
+
+    </header>
+
+    <!--ヒーローイメージ-->
+    <section class="hero">
+        <div class="catch">
+            <div class="container">
+                <h1>
+                    <img src="img/"
+                    alt="みやび会">
+                </h1>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <!--メッセージ-->
+    <section class="message">
+        <div class="container">
+            <h2>
+                みやび会とは<br>
+                
+            </h2>
+            <p>
+                情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて情に棹させば流される。智に働けば角が立つ。
+                どこへ越しても住みにくいと悟った時、詩が生れて情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて
+            </p>
+            
+        </div>
+    </section>
+
+    <!--サービス-->
+    <section class="service">
+        <div class="container">
+            <h2>活動内容</h2>
+            <p>テキストテキスト</p>
+
+            <!--サービス詳細-->
+            <div class="details">
+                <article class="detail office">
+                    <figure></figure>
+                    <h3>行事予定</h3>
+                    <p>みやび会では、定期的に研究会を開催しております。
+                        情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて
+                    </p>
+                    <a href="#" class="btn">行事予定</a>
+                </article>
+
+                <article class="detail manage">
+                    <figure></figure>
+                    <h3>教室のご案内</h3>
+                    <p>みやび会の教室のご案内
+                        情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて
+                    </p>
+                    <a href="#" class="btn">教室のご案内</a>
+                </article>
+
+                <article class="detail research">
+                    <figure></figure>
+                    <h3>活動記録</h3>
+                    <p>これまでの行事や活動の様子
+                        情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて
+                    </p>
+                    <a href="#" class="btn">活動記録</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!--お問い合わせ-->
+    <section class="contact">
+        <div class="container">
+            <div class="text">
+                <h2>お問い合わせ</h2>
+                <p>
+                ご質問などございましたら、<br>
+                お気軽にお問い合わせください。
+                </p>
+            </div>
+
+            <!--フォーム-->
+            <form class="form">
+                <p>
+                    <label>
+                        <span class="sr-only"> 名前</span>
+                        <input type="text" name="name" placeholder="名前">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="sr-only">メールアドレス</span>
+                        <input type="email" name="email" placeholder="メールアドレス">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="sr-only">メッセージ</span>
+                        <textarea name="msg" placeholder="メッセージを入力してください"></textarea>
+                    </label>
+                </p>
+                <!--送信ボタン-->
+                <p>
+                    <input type="submit" value="送信" class="btn">
+                </p>
+            </form>
+
+
+
+        </div>
+    </section>
+
+    <!--フッター-->
+    <footer class="footer">
+        <div class="container">
+            <div class="info">
+
+                <div class="site">
+                    <img src="img/miyabi_logoWht.png" alt="">
+                    <div>
+                    <p class="corp">みやび会</p>
+                    </div>
+                </div>
+
+                <p class="add">
+                    〒000-0000<br>
+                    東京都○○区△△△ □□□□ビル 8F<br>
+                    0000-1234-5678
+                </p>
+            </div>
+
+            <!--SNS-->
+            <ul class="sns">
+                <li><a href="#"><img src="img/Twitter-logo.svg" alt="Twitter"></a></li>
+                <li><a href="#"><img src="img/f_logo.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="img/glyph-logo.svg" alt="Instagram"></a></li>
+            </ul>
+
+        </div>
+
+        <p></p>
+    </footer>
+
+    <!--javascript-->
+    <script>
+        function onld() {
+            alert("このサイトはサンプルサイトです。実際に存在する組織のサイトではありません。")
+        }    
+    </script>
+    
+    <noscript>
+        <p>Javascriptの機能を有効にしてください。</p>
+    </noscript>
+
+    <!--javascriptナビゲーションメニュー開閉-->
+    <script>
+        function navFunc() {
+            document.querySelector('html').classList.toggle('open');
+        }
+    </script>
+
+
+    </body>
+</html>
