@@ -325,11 +325,7 @@ a:hover {
     }
 }
 
-@media (min-width: 374px){
-    .about h2 {
-        font-size: 20px;
-    }
-}
+
 
 /*message*/
 .message {
@@ -380,11 +376,6 @@ a:hover {
     }
 }
 
-@media (min-width: 374px){
-    .message h2 {
-        font-size: 20px;
-    }
-}
 
 /*school*/
 .school {
@@ -433,11 +424,6 @@ a:hover {
     }
 }
 
-@media (min-width: 374px){
-    .school h2 {
-        font-size: 20px;
-    }
-}
 
 
 /*サービス*/
@@ -474,11 +460,7 @@ a:hover {
     }
 }
 
-@media (min-width: 374px){
-    .service h2 {
-        font-size: 20px;
-    }
-}
+
 
 /*サービス詳細*/
 .details {
@@ -635,7 +617,7 @@ a:hover {
     }
 
     .contact h2 {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .contact h2 + p {
@@ -644,11 +626,7 @@ a:hover {
     }
 }
 
-@media (min-width: 374px){
-    .contact h2 {
-        font-size: 20px;
-    }
-}
+
 
 
 
