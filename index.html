@@ -38,10 +38,13 @@
         <link rel="icon" href="logo_03.png" type="image/png">
         <link rel="icon" href="logo_03.svg" type="image/svg+xml">
 
+         <!--javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     </head>
 
     <!--body------------------------------------------------------------ -->
-    <body onload="onld();">
+    <body>
 
      <!--ヘッダー-->
     <header class="header">
@@ -54,24 +57,24 @@
                 </div>
             </div>
 
-            <!--ヘッダーナビゲーションボタン-->
-            <button type="button" class="nav-button" onclick="navFunc()">
-                <span class="sr-only">MENU</span>
-            </button>
-
-            <!--ヘッダーナビゲーション-->
-            <nav class="nav">
-                <ul>
-                    <li><a href="#about">みやび会とは</a></li>
-                    <li><a href="#message">ごあいさつ</a></li>
-                    <li><a href="#school">教室のご案内</a></li>
-                    <li><a href="#service">活動内容</a></li>
-                    <li><a href="#contact" class="btn">お問い合わせ</a></li>
-                </ul>
-            </nav>
-
-
+        <!-- ハンバーガーメニュー -->
+        <div id="nav-toggle">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+        <!--グローバルナビ-->
+        <nav id="gloval-nav">
+            <ul>
+                <li><a href="#message">ごあいさつ</a></li>
+                <li><a href="#about">みやび会とは</a></li>
+                <li><a href="#school">教室のご案内</a></li>
+                <li><a href="#service">活動内容</a></li>
+                <li><a href="#contact" class="btn">お問い合わせ</a></li>
+            </ul>
+        </nav>
 
     </header>
 
@@ -163,7 +166,7 @@
             </div>
             <div class="boxset">
                 <div class="leftBox">
-                    <p>昭和63年4</p>
+                    <p>昭和63年4月</p>
                 </div>
                 <div class="rightBox">
                     <p>宗家を道仙寺に置き、林晃州が初代宗家となる。</p>
@@ -357,33 +360,15 @@
         }
     </script>
 
-<script>
-    function page_up () {
-const page_up = document.getElementById('page_up');
-window.addEventListener('scroll', () => {
-const top = window.pageYOffset;
-    if ( top > 420 ) {
-    setTimeout( function() {
-    page_up.style.opacity = 1;
-    }, 1);
-    page_up.classList.remove('is-hide');
-    } else {
-    setTimeout( function() {
-    page_up.style.opacity = 0;
-    }, 1);
-       page_up.classList.add('is-hide');
-    }
-});
+    
 
-const up = document.getElementById('page_up');
-up.addEventListener('click', () => {
-    window.scroll({
-    top: 0,
-    behavior: 'smooth'});
-});
-}
-page_up();
-</script>
+    <!--javascript TOPへ戻るボタン-->
+    <script type="text/javascript" src="js/pageupbtn.js"></script>
+
+     <!--javascript humbergermenu-->
+    <script type="text/javascript" src="js/humberger2.js"></script>
+
+    
 
     </body>
 </html>
