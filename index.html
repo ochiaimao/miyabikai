@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang= ja>
+    <head>
+        <meta charset="UTF-8">
+        <!--レスポンシブviewport-->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>みやび会</title>
+
+        <!-- ------------------------------------
+        OGP設定
+        ------------------------------------ -->
+        <!-- ※基本共通設定 -->
+        <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+            <title>ページのタイトル</title>
+            <meta property="og:title" content="みやび会TOPページ" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="ページのURL" />
+            <meta property="og:image" content="サムネイル画像のURL" />
+            <meta property="og:site_name" content="小笠原真流｜みやび会" />
+            <meta property="og:description" content="小笠原真流みやび会のwebサイトです。" />
+            
+            <!-- Facebook用設定 -->
+            <meta property="fb:app_id" content="App-ID（15文字の半角数字）" />
+            <meta property="fb:admins" content="adminID（15文字の半角数字）" />
+            
+            <!-- ※Twitter共通設定 -->
+            <meta name="twitter:card" content="Twitterカードの種類" />
+
+        <!-- ------------------------------------
+        CSS設定
+        ------------------------------------ -->
+        <link rel="stylesheet" href="css/style.css">
+        <!--googlefont-->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap&subset=japanese" rel="stylesheet">
+        
+        
+        <!--ファビコン-->
+        <link rel="icon" href="logo_03.png" type="image/png">
+        <link rel="icon" href="logo_03.svg" type="image/svg+xml">
+
+         <!--javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </head>
+
+    <!--body------------------------------------------------------------ -->
+    <body>
+
+     <!--ヘッダー-->
+    <header class="header">
+        <div class="container">
+            <div class="site">
+                <img src="img/miyabi_logo.png" alt="">
+                <div>
+                <p class="corp">みやび会</p>
+                <p class="desc">煎茶道小笠原真流</p>
+                </div>
+            </div>
+
+        <!-- ハンバーガーメニュー -->
+        <div id="nav-toggle">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!--グローバルナビ-->
+        <nav id="gloval-nav">
+            <ul>
+                <li><a href="#message">ごあいさつ</a></li>
+                <li><a href="#about">みやび会とは</a></li>
+                <li><a href="#school">教室のご案内</a></li>
+                <li><a href="#service">活動内容</a></li>
+                <li><a href="#contact" class="btn">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--TOPに戻るボタン-->
+    <div id="page_up" class="page_up is-hide">Top</div>
+
+    <!--ヒーローイメージ-->
+    <section class="hero">
+        <div class="catch">
+            <div class="container">
+                <h1>
+                    <img src="img/miyabi_logo.png"
+                    alt="みやび会">
+                </h1>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------
+        message　
+    ------------------------------ -->
+    <section id="message" class="message">
+        <div class="container">
+            <h2>ごあいさつ</h2>
+            <!-- <figure><img src="" alt=""></figure> -->
+            
+            <p>
+                煎茶というと「堅苦しい」とか「敷居が高い」、「長時間座るのは膝が…」という理由から
+                なかなか触れる機会がないかもしれません。みやび会のお稽古は普段着で気軽に参加でき、
+                都合の良い時間や場所で教室を選べます。もちろん、椅子に座ったままでのお稽古もできます。
+                お稽古を通して、お茶を美味しく淹れる方法や、理に適った美しい作法を身に付けられます。
+                せわしない今日、楽しみながら礼儀作法やおもてなしを学び、静かで心豊かな時間を過ごしてみませんか。
+            </p>
+            
+        </div>
+    </section>
+
+    <!-- ------------------------------
+        About
+    ------------------------------ -->
+    <section id="about" class="about">
+        <div class="container">
+            
+            <h2>みやび会とは</h2>
+            <p>
+               「煎茶道小笠原真流　みやび会」は創立38年の煎茶道の流派です。
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="boxset">
+                <div class="leftBox">
+                    <p>昭和22年</p>
+                </div>
+                <div class="rightBox">
+                    <p>呉の宗家相談役片岡宗文が津山へ転居</p>
+                </div>
+            </div>
+            
+            <div class="boxset">
+                <div class="leftBox">
+                    <p>昭和25年</p>
+                </div>
+                <div class="rightBox">
+                    <p>林忠一宗家出席のもと小笠原流煎茶道津山市局が発足し、
+                        片岡宗文が小笠原流煎茶道津山市局長兼、みやび会会長に就任。</p>
+                </div>
+            </div>
+            
+            <div class="boxset">
+                <div class="leftBox">
+                    <p>昭和58年</p>
+                </div>
+                <div class="rightBox">
+                    <p>津山に宗家引継ぎを要請し、
+                        幹部（片岡宗文、三田村宗月、杉山宗寿、藤原宗花）で協議し、
+                        会員に図り三瀬を得たため、小笠原真流と改称し、受け継ぐこととなる。</p>
+                </div>
+            </div>
+            <div class="boxset">
+                <div class="leftBox">
+                    <p>昭和58年7月</p>
+                </div>
+                <div class="rightBox">
+                    <p>片岡宗文宗家代行として小笠原真流煎茶道を発表。</p>
+                </div>
+            </div>
+            <div class="boxset">
+                <div class="leftBox">
+                    <p>昭和63年4月</p>
+                </div>
+                <div class="rightBox">
+                    <p>宗家を道仙寺に置き、林晃州が初代宗家となる。</p>
+                </div>
+            </div>
+            <div class="boxset">
+                <div class="leftBox">
+                    <p>平成15年4月</p>
+                </div>
+                <div class="rightBox">
+                    <p>創流20周年記念式を行う。</p>
+                </div>
+            </div> 
+        </div>
+        
+    </section>
+
+    <!-- ------------------------------
+        school
+    ------------------------------ -->
+    <section id="school" class="school">
+        <div class="container">
+            <h2>教室のご案内</h2>
+            <div class="item">
+                <h3>村上教室（ちんがらや）</h3>
+                <p>
+                   津山市椿高下43-3 TEL: 0868-22-2427
+                </p>
+                <p>毎週金曜日　18:30～21:00頃まで</p>
+                <p>1回2,500円</p>
+                <p>2回5,000円</p>
+                <p>1ヶ月5,000円(3回)</p>
+            </div>
+            
+            <div class="item">
+                <h3>関教室（美作教育会館）</h3>
+                <p>
+                   津山市大手町5-3 TEL: 090-7377-1804（河崎）
+                </p>
+                <p>火曜日12:00～14:00</p>
+                <p>1ヶ月 5,000円</p>
+            </div>
+            <div class="item">
+                <h3>楽しい煎茶教室（山陽新聞カルチャープラザ）</h3>
+                <p>
+                   津山市新魚町17 TEL: 0868-31-3403
+                </p>
+                <p>第1・3土曜日15:30～17:30</p>
+                <p>3ヶ月9,300円(6回)</p>
+                <p>水屋料　1回300円</p>
+            </div>
+            <div class="item">
+                <h3>青井教室（鏡野教室）</h3>
+                <p>
+                   鏡野町薪森原140-4 TEL: 090-2291-4393（落合）
+                </p>
+                <p>水曜日13:00～15:00</p>
+                <p>1ヶ月 5,000円</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ------------------------------
+        活動内容
+    ------------------------------ -->
+    <section id="service" class="service">
+        <div class="container">
+            <h2>活動内容</h2>
+            <p>定期活動やその内容について</p>
+
+            <!--サービス詳細-->
+            <div class="details">
+                <article class="detail office">
+                    <figure></figure>
+                    <h3>行事予定</h3>
+                    <p>みやび会では、定期的に研究会を開催しております。
+                        情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて
+                    </p>
+                    <a href="#" class="btn">行事予定</a>
+                </article>
+
+                <article class="detail research">
+                    <figure></figure>
+                    <h3>活動記録</h3>
+                    <p>これまでの行事や活動の様子。
+                        情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて
+                    </p>
+                    <a href="#" class="btn">活動記録</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------
+        お問い合わせ
+    ------------------------------ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="text">
+                <h2>お問い合わせ</h2>
+                <p>
+                ご質問などございましたら、<br>
+                お気軽にお問い合わせください。
+                </p>
+            </div>
+
+            <!--フォーム-->
+            <form class="form">
+                <p>
+                    <label>
+                        <span class="sr-only"> 名前</span>
+                        <input type="text" name="name" placeholder="名前">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="sr-only">メールアドレス</span>
+                        <input type="email" name="email" placeholder="メールアドレス">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="sr-only">メッセージ</span>
+                        <textarea name="msg" placeholder="メッセージを入力してください"></textarea>
+                    </label>
+                </p>
+                <!--送信ボタン-->
+                <p>
+                    <input type="submit" value="送信" class="btn">
+                </p>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- ------------------------------
+        フッター
+    ------------------------------ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="info">
+
+                <div class="site">
+                    <img src="img/miyabi_logoWht.png" alt="">
+                    <div>
+                    <p class="corp">みやび会</p>
+                    </div>
+                </div>
+
+                <!--
+                <p class="add">
+                    〒000-0000<br>
+                    東京都○○区△△△ □□□□ビル 8F<br>
+                    0000-1234-5678
+                </p>
+                -->
+            </div>
+
+            <!--SNS-->
+            <ul class="sns">
+                <li><a href="#"><img src="img/Twitter-logowht.svg" alt="Twitter"></a></li>
+                <li><a href="#"><img src="img/f_logowht.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="img/glyph-logowht.svg" alt="Instagram"></a></li>
+            </ul>
+
+        </div>
+
+        <p></p>
+    </footer>
+
+    <!--javascript-->
+    <noscript>
+        <p>Javascriptの機能を有効にしてください。</p>
+    </noscript>
+
+    <!--javascript TOPへ戻るボタン-->
+    <script type="text/javascript" src="js/pageupbtn.js"></script>
+
+     <!--javascript humbergermenu-->
+    <script type="text/javascript" src="js/humberger2.js"></script>
+
+    </body>
+</html>

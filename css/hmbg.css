@@ -1,0 +1,124 @@
+/*ナビゲーションボタン*/
+#nav-toggle {
+  box-sizing: content-box;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  width: 25px; /*ボタンの幅高*/
+  height: 18px;
+  cursor: pointer;
+  color: #db7878; /*ボタンの色*/
+
+}
+
+/*ナビゲーションボタンの設定*/
+#nav-toggle::before,
+#nav-toggle::after {
+  content: '';
+  display: block;
+  height: 4px;
+  background-color: currentColor;
+  transform: translateY(5px);
+  transition: 0.3s ease-in-out; /*ボタンアニメーション変化*/
+}
+
+#nav-toggle::before {
+  transform: translateY(-5px);
+  box-shadow: 0 7px currentColor;
+}
+
+/*ナビゲーションボタン(閉じる)ボタンを×にするのはnav開いたときのみ適用*/
+.open #nav-toggle {
+  z-index: 1000; /*オーバーレイ上に表示*/
+  color: #FFFFFF;
+}
+
+
+.open #nav-toggle::before {
+  transform: translateY(2px) rotate(45deg); /*×印*/
+  box-shadow: none;
+}
+
+.open #nav-toggle::after {
+  transform: translateY(-2px) rotate(-45deg); /*×印*/
+}
+
+
+/*ナビゲーションメニュー：モバイル*/
+@media (max-width: 899px) {
+  html .open, .open body {
+      height: 100%;
+      overflow: hidden; /*開いた時のみスクロール防止*/
+  }
+  
+  .open .form {
+      display: none; /*iOSスクロール回避*/
+  }
+  
+  .open #gloval-nav {
+      left: 0; /*開いたときのオーバーレイ位置指定*/
+  }
+  
+  .header {
+      position: relative; /*スクロール防止*/
+  }
+  
+  #gloval-nav {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      /*left: 0;*/
+      width: 100%; /*閉じたときのオーバーレイ位置指定*/
+      height: 100vh; /*オーバーレイ高さ指定*/
+      background: rgba(0, 0, 0, 0.8); /*オーバーレイ背景色*/
+      color: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: left 0.5s; /*アニメーション変化*/
+  }
+  
+  html, body {
+      overflow-x: hidden; /*画面外オーバーレイ非表示*/
+  }
+  
+  #gloval-nav ul {
+      list-style: none;
+      font-weight: bold;
+      text-align: center;
+  }
+  
+  #gloval-nav li:not(:last-child) {
+      margin-bottom: 40px;  /*リンクの間隔*/
+  }
+  
+  #gloval-nav .btn {
+      color: inherit;
+  }
+  
+}
+
+
+/*PCナビゲーションメニュー設定*/
+@media (min-width: 900px) {
+    #nav-toggle {
+        display: none; /*開閉ボタン非表示*/
+    }
+
+    #gloval-nav ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        color: #888;
+    }
+
+    #gloval-nav li:not(:last-child) {
+        margin-right: 23px;
+    }
+
+    #gloval-nav .btn {
+        width: 148px;
+        border-color: #fff;
+    }
+}
